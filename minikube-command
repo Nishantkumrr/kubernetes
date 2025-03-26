@@ -1,0 +1,160 @@
+# .Useful Minikube Commands
+
+#   Command	                                               Description
+
+  minikube start                                       #  Starts a local Minikube cluster
+
+  minikube stop	                                       #  Stops the Minikube cluster
+
+  minikube delete	                                   #  Deletes the Minikube cluster
+
+  minikube status	                                   #  Shows the status of Minikube
+
+  minikube dashboard  	                               #  Opens the Kubernetes dashboard
+
+  minikube ip	                                       #  Gets the IP address of Minikube
+
+  minikube service <service-name>                      #  Opens a service in the browser
+
+  minikube addons list                                 #  Lists available Minikube addons
+
+  minikube logs                                        # Shows logs for debugging Minikube
+
+  minikube node list	                               #  Lists all Minikube nodes
+
+  minikube config set memory 4096 	                   #  Configures Minikube with 4GB RAM
+
+  minikube tunnel	                                   #  Exposes LoadBalancer services
+
+  minikube service <service-name> --url                #  Service ka URL check karo
+
+
+# .Cluster Information Commands
+
+  kubectl cluster-info	                               #  Displays cluster information 
+
+  kubectl version	                                   #  Shows the version of Kubernetes client and server
+
+  kubectl get nodes	                                   #  Lists all nodes in the cluster
+
+  kubectl describe node <node-name>                    #  Shows detailed information about a node
+
+
+# .Working with Pods
+
+  kubectl get pods	                                   #  Lists all pods in the current namespace
+
+  kubectl get pods -A	                               #  Lists all pods across all namespaces
+
+  kubectl get pods -n <namespace>                      #  Lists pods in a specific namespace
+
+  kubectl describe pod <pod-name>                      #   Displays detailed information about a pod
+
+  kubectl logs <pod-name>	                           #  Shows logs of a running pod
+
+  kubectl logs -f <pod-name>	                       #  Follows the logs of a running pod
+
+  kubectl exec -it <pod-name> -- /bin/sh               #	Access a running pod interactively
+
+  kubectl delete pod <pod-name>	                       #  Deletes a specific pod
+
+  kubectl delete pods --all	                           #  Deletes all pods in the current namespace
+
+# .Working with Deployments
+
+  kubectl get deployments                              #  Lists all deployments  
+
+  kubectl describe deployment <deployment-name>	       #  Shows details of a deployment
+
+  kubectl rollout status deployment <deployment-name>  #  Checks deployment rollout status
+
+  kubectl rollout undo deployment <deployment-name>    #  Rol ls back to the previous deployment
+
+  kubectl delete deployment <deployment-name>	       #  Deletes a deployment
+
+
+# .Working with Services
+
+  kubectl get svc	                                   #  Lists all services 
+
+  kubectl get services -A	                           #  Lists all services across namespaces
+
+  kubectl describe svc <service-name>	               #  Shows detailed information about a service
+
+  kubectl delete svc <service-name>	                   #  Deletes a specific service
+
+
+# .Working with Namespaces
+
+  kubectl get namespaces	                           #  Lists all namespaces
+
+  kubectl create namespace <namespace>                 #  Creates a new namespace
+
+  kubectl delete namespace <namespace>	               #  Deletes a namespac
+
+
+# .Working with ConfigMaps and Secrets
+
+  kubectl get configmaps	                           #  Lists all ConfigMaps
+
+  kubectl get secrets	                               #  Lists all Secrets
+
+  kubectl describe configmap <configmap-name>	       #  Displays details of a ConfigMap
+
+  kubectl describe secret <secret-name>                #  Displays details of a Secret
+
+
+# .Working with Persistent Volumes
+
+  kubectl get pv	                                   #  Lists all PersistentVolumes
+
+  kubectl get pvc	                                   #  Lists all PersistentVolumeClaims
+
+  kubectl describe pv <pv-name>                        #  Shows details of a PersistentVolume
+
+
+# .Working with Roles and RBAC
+
+  kubectl get roles	                                   #  Lists all roles
+
+  kubectl get rolebindings	                           #  Lists all role bindings
+
+  kubectl describe role <role-name>                    #	Shows details of a role
+
+  kubectl delete role <role-name>	                   #  Deletes a role
+
+
+# .Debugging and Troubleshooting
+
+  kubectl get events	                               #  Lists events in the cluster
+
+  kubectl top nodes	                                   #  Shows resource usage of nodes
+
+  kubectl top pods	                                   #  Shows resource usage of 
+  
+  kubectl get all	                                   #  Lists all resources in the current namespace
+
+
+# .Other Useful Commands
+
+  kubectl apply -f <file.yaml>	                       #  Creates or updates resources from a YAML file
+
+  kubectl delete -f <file.yaml>                        #	Deletes resources defined in a YAML file
+
+  kubectl edit <resource> <name>	                   #   Edits a resource using the default editor
+
+  kubectl scale deployment <deployment-name> --replicas=3	                 #  Scales a deployment
+
+  kubectl expose deployment <deployment-name> --type=NodePort --port=80	     #  Exposes a deployment as a service
+
+
+# .To get help on a specific kubectl command, run:
+
+
+  kubectl <command> --help
+
+# .For example:
+
+  kubectl get pods --help
+
+
