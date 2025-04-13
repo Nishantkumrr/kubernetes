@@ -1027,10 +1027,10 @@
           <xhtml:div
              style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 112px; height: 1px; padding-top: 446px; margin-left: 872px;">
             <xhtml:div
-               data-drawio-colors="color: #ffffff; "
+               data-drawio-colors="color:rgb(106, 193, 30); "
                style="box-sizing: border-box; font-size: 0px; text-align: center;">
               <xhtml:div
-                 style="display: inline-block; font-size: 16px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                 style="display: inline-block; font-size: 16px; font-family: Helvetica; color: rgb(69, 188, 89); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
                 <xhtml:b>kubelet</xhtml:b>
               </xhtml:div>
             </xhtml:div>
@@ -1132,10 +1132,10 @@
           <xhtml:div
              style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 597px; margin-left: 612px;">
             <xhtml:div
-               data-drawio-colors="color: #ffffff; "
+               data-drawio-colors="color:rgb(178, 229, 68); "
                style="box-sizing: border-box; font-size: 0px; text-align: center;">
               <xhtml:div
-                 style="display: inline-block; font-size: 14px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                 style="display: inline-block; font-size: 14px; font-family: Helvetica; color: rgb(145, 202, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
                 <xhtml:b>pod</xhtml:b>
               </xhtml:div>
             </xhtml:div>
@@ -1146,7 +1146,7 @@
            y="601"
            fill="#ffffff"
            font-family="Helvetica"
-           font-size="14px"
+           font-size="18px"
            text-anchor="middle"
            id="text42">pod</text>
       </switch>
